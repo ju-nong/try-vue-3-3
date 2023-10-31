@@ -1,3 +1,4 @@
 import Home from "./Home.vue";
+import PropsDestructuring from "./PropsDestructuring.vue";
 
-export { Home };
+export { Home, PropsDestructuring };

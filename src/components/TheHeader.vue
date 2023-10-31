@@ -1,16 +1,12 @@
 <template>
-    <div class="header">
-        <button
-            v-if="route.name != 'HOME'"
-            class="header-back"
-            @click="router.back"
-        >
+    <header>
+        <button v-if="route.name != 'HOME'" @click="router.back">
             <img src="/images/ic-left-arrow.svg" alt="뒤로가기" />
         </button>
-        <div class="header-title">
-            <p>{{ route.meta.name }}</p>
+        <div>
+            {{ route.meta.name }}
         </div>
-    </div>
+    </header>
 </template>
 
 <script setup lang="ts">
@@ -21,12 +17,13 @@ const route = useRoute();
 </script>
 
 <style lang="scss" scoped>
-.header {
+header {
     position: relative;
     padding: 16px 24px;
-    height: 50px;
 
-    &-back {
+    border-bottom: 1px solid #bbb;
+
+    button {
         position: absolute;
         z-index: 10;
         height: 21px;
@@ -36,7 +33,7 @@ const route = useRoute();
         }
     }
 
-    &-title {
+    > div {
         text-align: center;
     }
 }

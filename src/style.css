@@ -12,6 +12,19 @@ body,
     height: 100%;
 }
 
+#app {
+    display: flex;
+    justify-content: center;
+    color: #333;
+    word-break: keep-all;
+}
+
 button {
     background-color: transparent;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
