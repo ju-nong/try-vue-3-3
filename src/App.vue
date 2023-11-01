@@ -10,6 +10,10 @@
 
 <script setup lang="ts">
 import { TheHeader, TheFooter } from "./components";
+
+//https://mokkapps.de/blog/whats-new-in-vue-3-3#props-destructuring
+//https://blog.vuejs.org/posts/vue-3-3
+//https://www.youtube.com/watch?v=Z-qLPtWFZps
 </script>
 
 <style lang="scss" scoped>
